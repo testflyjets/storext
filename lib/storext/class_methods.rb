@@ -81,7 +81,7 @@ module Storext
     end
 
     def _load(yml)
-      YAML.load(yml)
+      YAML.unsafe_load(yml)
     end
 
     private
